@@ -1,0 +1,220 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+
+header{
+    background-color: rgb(107, 204, 98);
+    display: flex; /*alinhar os elementos ao lado*/
+    justify-content:space-between; /*espaçamento entre os dois*/
+}
+
+header .esquerda{
+    height: 100%;
+    width: 53%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header img {
+    width: 20%;
+    height: 20%;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 30px;
+    padding-top: 10%;
+    color: rgb(21, 255, 0);
+    display: flex;
+    justify-content: center;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;/*remover a formatação*/
+    padding: 10px;
+    color: rgb(56, 206, 56);
+    text-transform: uppercase; /*maiúculo*/
+    font-weight: bold;/*negrito*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav a:hover{
+    color: rgb(63, 105, 65);
+}
+
+header nav section a{
+    margin: 5px;
+    background-color: rgb(228, 250, 205);
+}
+
+.video{ 
+    padding: 1%;
+    text-align: center;
+}
+
+.sobre{
+    margin: 2%;
+    background-color: rgb(195, 252, 190);
+    padding: 30px 10px 30px 10px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+
+main h2{
+    margin: 10px;
+    text-align: center;
+}
+
+form {
+    background-color: rgb(195, 252, 190);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 2%;
+    border-radius: 5%;
+}
+
+.contato-principal{
+    display: flex;
+    justify-content:space-between;
+    padding: 0% 10% 0% 10%;
+}
+
+.tudo{
+    background-color: rgb(195, 252, 190);
+    padding: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5%;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.aulas{
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}   
+
+.aulas section{
+    width: 20%;
+    background-color: rgb(195, 252, 190);
+    padding: 2%;
+    text-align: center;
+    margin: 1%;
+    border-radius: 5%;
+}
+
+.aulas img{
+    padding: 5px;
+}
+
+li{
+    text-align: left;
+}
+
+footer {
+    margin: 2%;
+    background-color: rgb(195, 252, 190);
+    text-align: center;
+    border-radius: 5px;
+}
+}
+
+/*------------------tamanho celular------------------*/
+
+@media screen and (max-width:576px){
+    body{ 
+
+        header{
+            display: flex;
+            flex-direction: column;
+        }
+
+        header .esquerda{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        header h1{
+            padding-top: 3%;
+            font-size: 140%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 2%;
+        }
+        
+        header nav{
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2%;
+            width: 100%;
+        }
+
+        header nav a{
+            padding: 5px;
+        }
+        
+        main .video{
+                padding: 1%;
+                text-align: center;
+        }
+
+        main iframe{
+            width: 500px;
+            height: 255px;
+        }
+
+        main .aulas{
+            display: flex;
+            flex-direction: column;
+        }
+
+        main .aulas section{
+            width: 90%;
+        }
+
+        main .contato-principal{
+            height: 730px;
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+        }
+
+        main .contato-principal form{
+            width: 100%;
+        }
+
+        main .contato-principal .tudo{
+            width: 100%;
+        }
+
+        main .contato-principal .tudo iframe{
+            width: 95%;
+        }
+    }
+}   
